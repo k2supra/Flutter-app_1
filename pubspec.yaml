@@ -8,8 +8,6 @@ environment:
 
 dependencies:
   flutter:
-    assets:
-      - assets/image/mee.jpg
     sdk: flutter
 
 dev_dependencies:
@@ -19,3 +17,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+        - assets/images/mee.jpg

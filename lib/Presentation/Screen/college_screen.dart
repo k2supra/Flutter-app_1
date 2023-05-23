@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CollegeScreen extends StatelessWidget {
   final List<Map<String, dynamic>> colleges = [
-    {'emoji': Icons.school, 'text': 'VTFK'},
+    {'emoji': Icons.school, 'text': 'VTFK       '},
     {'emoji': Icons.forest, 'text': '1 course'},
   ];
 
@@ -27,7 +27,7 @@ class CollegeScreen extends StatelessWidget {
                     child: Icon(col['emoji']),
                   ),
                   //Icon(col['emoji']),
-                  const SizedBox(width: 8,),
+                  const SizedBox(width: 10,),
                   Text(col['text']),
                 ],
               )

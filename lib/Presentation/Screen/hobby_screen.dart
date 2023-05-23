@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class HobbyScreen extends StatelessWidget {
   final List<Map<String, dynamic>> hobbies = [
-    {'icon': Icons.computer, 'text': 'IT'},
+    {'icon': Icons.computer, 'text': 'IT      '},
     {'icon': Icons.music_note, 'text': 'Sport'},
   ];
 
@@ -23,7 +23,7 @@ class HobbyScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(hobby['icon']),
-                  const SizedBox(width: 8),
+                  const SizedBox(width: 10),
                   Text(hobby['text']),
                 ],
               ),

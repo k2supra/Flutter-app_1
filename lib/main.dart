@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
-import 'Internal/Config.dart';
+import 'Internal/config.dart';
 
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

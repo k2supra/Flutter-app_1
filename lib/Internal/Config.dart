@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import '../Presentation/Screen/home.dart';
 import '../Presentation/Screen/college_screen.dart';
@@ -9,6 +7,7 @@ class Config extends StatefulWidget {
   const Config({required Key key}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _ConfigState createState() => _ConfigState();
 }
 
@@ -28,7 +27,7 @@ class _ConfigState extends State<Config> {
           actions: [
             IconButton(
               icon: const Icon(Icons.logout),
-              onPressed: () {exit(0);},
+              onPressed: () {null;},
             ),
           ],
         ),
@@ -49,7 +48,7 @@ class _ConfigState extends State<Config> {
               label: 'Hobbies',
             ),
           ],
-          selectedItemColor: Color(0xFF0AB9BF),
+          selectedItemColor: const Color(0xFF0AB9BF),
           onTap: (int index) {
             setState(() {
               _currentIndex = index;
