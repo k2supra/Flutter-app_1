@@ -1,6 +1,6 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import '../presentation/home.dart';
+import '../presentation/second.dart';
 
 class Config extends StatefulWidget {
   const Config({required Key key}) : super(key: key);
@@ -25,8 +25,13 @@ class _ConfigState extends State<Config> {
           elevation: 0,
           actions: [
             TextButton(
-              onPressed: () {null;}, 
-              child: const Text('Skip >'),
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: ((context) => const Second())));
+              },
+              child: const Text('Skip >', style: TextStyle(
+                color: Colors.black,
+                fontSize: 16
+              ),),
               )
           ],
         ),
